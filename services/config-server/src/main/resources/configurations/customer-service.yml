@@ -1,0 +1,19 @@
+spring:
+  data:
+    mongodb:
+      username: ramich
+      password: secret
+      host: localhost
+      port: 27017
+      authentication-database: admin
+      database: customer
+server:
+  port: 8090
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
